@@ -26,7 +26,8 @@ const RegistrationContent = () => {
   };
 
   const onSignInClickHandler = () => {
-    setProfileData([{ image: image, name: inputName }]);
+    localStorage.setItem("userImage", image);
+    localStorage.setItem("userName", inputName);
     navigate("/form");
   };
 
