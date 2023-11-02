@@ -16,7 +16,7 @@ const Api = () => {
 
   return (
     <>
-      <ApiContent apiData={apiData}/>
+      <ApiContent apiData={apiData} />
     </>
   );
 };

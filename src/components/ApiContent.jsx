@@ -9,11 +9,11 @@ const ApiContent = ({ apiData }) => {
           <div className={styles.userId}>
             <span>{item.userId}</span>
           </div>
-            <div className={styles.id}>
-              <span>{item.id}</span>
-            </div>
-            <p>{item.title}</p>
-            <p>{item.body}</p>
+          <div className={styles.id}>
+            <span>{item.id}</span>
+          </div>
+          <p>{item.title}</p>
+          <p>{item.body}</p>
         </li>
       ))}
     </ul>
