@@ -1,0 +1,77 @@
+.regCard {
+  width: 794px;
+  height: 894px;
+  border-radius: 25px;
+  background-color: #ffffff;
+  margin: 93px auto;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.regCard h3 {
+  margin: 72px 0 0 0;
+  color: #000000;
+  font-weight: 400;
+  font-size: 64px;
+}
+
+.regCard p {
+  color: #000000;
+  font-weight: 400;
+  font-size: 36px;
+}
+
+.regCard div {
+  width: 200px;
+  height: 200px;
+  background-color: #e6ebff;
+  border-radius: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.addphoto {
+  width: 82.69px;
+  height: 74.8px;
+  background-color: #e6ebff;
+  cursor: pointer;
+}
+
+.profileImage {
+  width: 200px;
+  height: 200px;
+  border-radius: 100px;
+}
+.regCard div input {
+  display: none;
+}
+
+.regCard .inputName {
+  width: 532px;
+  height: 101px;
+  background-color: #e6ebff;
+  border: none;
+  font-weight: 400;
+  font-size: 36px;
+  padding-left: 29px;
+}
+
+.regCard input::placeholder {
+  color: #a5a5a5;
+  font-weight: 400;
+  font-size: 36px;
+}
+
+.regCard button {
+  width: 395px;
+  height: 74.14px;
+  border-radius: 50px;
+  background-color: #4980c0;
+  font-weight: 400;
+  font-size: 24px;
+  border: none;
+  color: #ffffff;
+  margin: 47px 0 44.86px 0;
+}
