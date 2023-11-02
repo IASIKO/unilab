@@ -8,7 +8,7 @@ const RegistrationContent = () => {
   const [inputName, setInputName] = useState("");
   const [profileData, setProfileData] = useState([{ image: null, name: "" }]);
   const fileInputRef = useRef();
-  //   const navigate = useNavigate();
+    const navigate = useNavigate();
 
   const handleImageClick = () => {
     fileInputRef.current.click();
@@ -27,8 +27,7 @@ const RegistrationContent = () => {
 
   const onSignInClickHandler = () => {
     setProfileData([{ image: image, name: inputName }]);
-    // navigate("/form");
-    console.log("clicked");
+    navigate("/form");
   };
 
   return (

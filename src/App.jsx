@@ -4,7 +4,6 @@ import Registration from "./pages/Registration";
 import Root from "./pages/Root";
 import Form from "./pages/Form";
 import Api from "./pages/Api";
-import "./App.css";
 
 function App() {
   const router = createBrowserRouter([
