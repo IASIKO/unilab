@@ -50,6 +50,7 @@
   border-radius: 40px;
   background-color: #e6ebff;
   margin-right: 62px;
+  cursor: pointer;
 }
 
 .infoContainer div img {
@@ -57,4 +58,14 @@
   height: 80px;
   border-radius: 40px;
   margin-right: 62px;
+}
+
+.backdrop {
+  background-color: rgba(0, 0, 0, 0.75);
+  height: 100vh;
+  left: 0;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 20;
 }
