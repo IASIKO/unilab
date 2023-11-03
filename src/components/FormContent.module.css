@@ -1,0 +1,48 @@
+.bars {
+  width: 1201px;
+  display: flex;
+  justify-content: space-between;
+  margin: 25px auto;
+}
+
+.filter {
+  width: 170px;
+  height: 42px;
+  border-radius: 10px;
+  background-color: #ffffff;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.filter span {
+  font-weight: 500;
+  font-size: 18px;
+  color: black;
+  margin-left: 27px;
+}
+
+.filter img {
+  width: 22px;
+  height: 22px;
+  padding: 10px;
+  color: #767777;
+}
+
+.search input {
+  width: 263px;
+  height: 37px;
+  border-radius: 8px;
+  background: url("../assets/search.png") no-repeat 16px 6px;
+  background-color: #ffffff;
+  padding-left: 50px;
+  font-size: 18px;
+}
+
+.formList {
+  width: 1201px;
+  height: 656px;
+  margin: 30px auto 0 auto;
+  background-color: #ffffff;
+  border-radius: 10px;
+}
