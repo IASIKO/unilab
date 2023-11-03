@@ -1,14 +1,25 @@
 import React from "react";
 import Navigation from "../components/Navigation";
 import { Outlet } from "react-router-dom";
+import Landing from "./Landing";
 
 const Root = () => {
+  const userImage = localStorage.getItem("userImage");
+  const userName = localStorage.getItem("userName");
+  const localStorageFull = userImage && userName;
+
   return (
     <>
-      <Navigation />
-      <main>
-        <Outlet />
-      </main>
+      {localStorageFull ? (
+        <>
+          <Navigation />
+          <main>
+            <Outlet />
+          </main>
+        </>
+      ) : (
+        <Landing />
+      )}
     </>
   );
 };

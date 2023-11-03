@@ -6,9 +6,6 @@ import Form from "./pages/Form";
 import Api from "./pages/Api";
 
 function App() {
-  const userImage = localStorage.getItem("userImage");
-  const userName = localStorage.getItem("userName");
-  const localStorageFull = userImage && userName;
 
   const router = createBrowserRouter([
     {
@@ -21,7 +18,7 @@ function App() {
     },
     {
       path: "/form",
-      element: localStorageFull ? <Root /> : <Landing />,
+      element: <Root />,
       children: [
         {
           path: "/form",
