@@ -29,6 +29,16 @@
   color: #767777;
 }
 
+.filterMenu {
+  width: 297px;
+  height: 295.4px;
+  border-radius: 10px;
+  background-color: white;
+  position: absolute;
+  top: 218px;
+  left: 50px;
+}
+
 .search input {
   width: 263px;
   height: 37px;
@@ -40,9 +50,28 @@
 }
 
 .formList {
-  width: 1201px;
+  max-width: 1201px;
   height: 656px;
   margin: 30px auto 0 auto;
   background-color: #ffffff;
   border-radius: 10px;
+  overflow-y: scroll;
+  scrollbar-width: thin;
+  position: relative;
+}
+
+.titles {
+  height: 89px;
+  border-bottom: 0.7px solid black;
+  display: flex;
+  text-align: center;
+  align-items: center;
+}
+
+.titles p {
+  max-width: 151px;
+  font-weight: 700;
+  font-size: 14px;
+  color: black;
+  padding: 0 50px;
 }
