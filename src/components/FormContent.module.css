@@ -80,18 +80,20 @@
 table {
   background-color: #ffffff;
   border-radius: 10px;
+  border-collapse: collapse;
+  border-spacing: 0;
 }
 
 thead tr {
   height: 89px;
+  border-bottom: 1px solid #315c8e;
 }
 
 thead tr th {
-  width: 151px;
   font-weight: 700;
   font-size: 14px;
   color: black;
-  padding: 0 50px;
+  padding: 0 90px;
 }
 
 tbody tr {
@@ -103,6 +105,7 @@ tbody tr td {
   color: black;
   font-weight: 400;
   font-size: 14px;
+  border-right: none;
 }
 
 tbody tr:nth-child(odd) {
