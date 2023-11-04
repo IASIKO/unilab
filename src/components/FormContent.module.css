@@ -68,6 +68,19 @@
   font-size: 18px;
 }
 
+.checkbox input {
+    margin-left: 52px;
+    color: #3669A2;
+
+}
+
+.checkbox label {
+  font-weight: 400;
+  font-size: 14px;
+  color: #000000;
+  margin-left: 11px;
+}
+
 .studentsCard {
   width: 1201px;
   height: 656px;
@@ -93,11 +106,11 @@ thead tr th {
   font-weight: 700;
   font-size: 14px;
   color: black;
-  padding: 0 90px;
+  padding: 0 85px;
 }
 
 tbody tr {
-  height: 75px;
+  height: 77px;
   text-align: center;
 }
 

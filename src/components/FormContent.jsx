@@ -33,14 +33,14 @@ const FormContent = () => {
             <p> სტუდენტის სტატუსი</p>
           </div>
           {isStatusOpen && (
-            <>
+            <div className={styles.checkbox}>
               <input type="checkbox" name="active" />
               <label htmlFor="active">ACTIVE</label>
               <br></br>
               <input type="checkbox" name="inactive" />
               <label htmlFor="inactive">INACTIVE</label>
               <br></br>
-            </>
+            </div>
           )}
           <div
             className={styles.drop}
@@ -50,14 +50,14 @@ const FormContent = () => {
             <p> სქესი</p>
           </div>
           {isGenderOpen && (
-            <>
+            <div className={styles.checkbox}>
               <input type="checkbox" name="male" />
               <label htmlFor="male">MALE</label>
               <br></br>
               <input type="checkbox" name="female" />
               <label htmlFor="female">FEMALE</label>
               <br></br>
-            </>
+            </div>
           )}
         </div>
       )}
