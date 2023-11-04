@@ -1,5 +1,6 @@
 export const DUMMY_DATA = [
   {
+    id: 1,
     firstName: "John",
     lastName: "Doe",
     Status: "Active",
@@ -11,7 +12,8 @@ export const DUMMY_DATA = [
     Address: "123 Main Street, Cityville",
     birthDay: "1985-03-15",
   },
-  {
+{
+    id: 2,
     firstName: "Jane",
     lastName: "Smith",
     Status: "Inactive",
@@ -24,6 +26,7 @@ export const DUMMY_DATA = [
     birthDay: "1990-07-20",
   },
   {
+    id: 3,
     firstName: "David",
     lastName: "Brown",
     Status: "Active",
@@ -36,6 +39,7 @@ export const DUMMY_DATA = [
     birthDay: "1988-11-10",
   },
   {
+    id: 4,
     firstName: "Emily",
     lastName: "Johnson",
     Status: "Active",
@@ -48,6 +52,7 @@ export const DUMMY_DATA = [
     birthDay: "1995-05-25",
   },
   {
+    id: 5,
     firstName: "John",
     lastName: "Doe",
     Status:"Inactive",
@@ -60,6 +65,7 @@ export const DUMMY_DATA = [
     birthDay: "1985-03-15",
   },
   {
+    id: 6,
     firstName: "Jane",
     lastName: "Smith",
     Status: "Inactive",
@@ -72,6 +78,7 @@ export const DUMMY_DATA = [
     birthDay: "1990-07-20",
   },
   {
+    id: 7,
     firstName: "David",
     lastName: "Brown",
     Status: "Active",
@@ -84,6 +91,7 @@ export const DUMMY_DATA = [
     birthDay: "1988-11-10",
   },
   {
+    id: 8,
     firstName: "Emily",
     lastName: "Johnson",
     Status: "Active",
@@ -96,6 +104,7 @@ export const DUMMY_DATA = [
     birthDay: "1995-05-25",
   },
   {
+    id: 9,
     firstName: "John",
     lastName: "Doe",
     Status: "Inactive",
@@ -108,6 +117,7 @@ export const DUMMY_DATA = [
     birthDay: "1985-03-15",
   },
   {
+    id: 10,
     firstName: "Jane",
     lastName: "Smith",
     Status: "Inactive",
@@ -120,6 +130,7 @@ export const DUMMY_DATA = [
     birthDay: "1990-07-20",
   },
   {
+    id: 11,
     firstName: "David",
     lastName: "Brown",
     Status: "Active",
@@ -132,6 +143,7 @@ export const DUMMY_DATA = [
     birthDay: "1988-11-10",
   },
   {
+    id: 12,
     firstName: "Emily",
     lastName: "Johnson",
     Status: "Active",
@@ -144,6 +156,7 @@ export const DUMMY_DATA = [
     birthDay: "1995-05-25",
   },
   {
+    id: 13,
     firstName: "John",
     lastName: "Doe",
     Status: "Inactive",
@@ -156,6 +169,7 @@ export const DUMMY_DATA = [
     birthDay: "1985-03-15",
   },
   {
+    id: 14,
     firstName: "Jane",
     lastName: "Smith",
     Status: "Inactive",
@@ -168,6 +182,7 @@ export const DUMMY_DATA = [
     birthDay: "1990-07-20",
   },
   {
+    id: 15,
     firstName: "David",
     lastName: "Brown",
     Status: "Active",
@@ -180,6 +195,7 @@ export const DUMMY_DATA = [
     birthDay: "1988-11-10",
   },
   {
+    id: 16,
     firstName: "Emily",
     lastName: "Johnson",
     Status: "Active",
@@ -192,6 +208,7 @@ export const DUMMY_DATA = [
     birthDay: "1995-05-25",
   },
   {
+    id: 17,
     firstName: "John",
     lastName: "Doe",
     Status: "Active",
@@ -204,6 +221,7 @@ export const DUMMY_DATA = [
     birthDay: "1985-03-15",
   },
   {
+    id: 18,
     firstName: "Jane",
     lastName: "Smith",
     Status: "Inactive",
@@ -216,6 +234,7 @@ export const DUMMY_DATA = [
     birthDay: "1990-07-20",
   },
   {
+    id: 19,
     firstName: "David",
     lastName: "Brown",
     Status: "Active",
@@ -228,6 +247,7 @@ export const DUMMY_DATA = [
     birthDay: "1988-11-10",
   },
   {
+    id: 20,
     firstName: "Emily",
     lastName: "Johnson",
     Status: "Active",
@@ -240,6 +260,7 @@ export const DUMMY_DATA = [
     birthDay: "1995-05-25",
   },
   {
+    id: 21,
     firstName: "John",
     lastName: "Doe",
     Status: "Active",
@@ -252,6 +273,7 @@ export const DUMMY_DATA = [
     birthDay: "1985-03-15",
   },
   {
+    id: 22,
     firstName: "Jane",
     lastName: "Smith",
     Status: "Inactive",
@@ -264,6 +286,7 @@ export const DUMMY_DATA = [
     birthDay: "1990-07-20",
   },
   {
+    id: 23,
     firstName: "David",
     lastName: "Brown",
     Status: "Inactive",
@@ -276,6 +299,7 @@ export const DUMMY_DATA = [
     birthDay: "1988-11-10",
   },
   {
+    id: 24,
     firstName: "Emily",
     lastName: "Johnson",
     Status: "Active",

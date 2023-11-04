@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import styles from "./FormContent.module.css";
 import filter from "../assets/filter.png";
 import ddarrow from "../assets/ddarrow.png";
+import { DUMMY_DATA } from "../DummyData";
 
 const FormContent = () => {
   const [isFilterOpen, setIsFilterOpen] = useState(false);
@@ -60,18 +61,37 @@ const FormContent = () => {
           )}
         </div>
       )}
-      <div className={styles.formList}>
-        <div className={styles.titles}>
-          <p>სტუდეტის სახელი და გვარი</p>
-          <p>სტატუსი</p>
-          <p>სქესი</p>
-          <p>ქულები</p>
-          <p>პირადი ნომერი</p>
-          <p>მეილი</p>
-          <p>ტელეფონი</p>
-          <p>მისამართი</p>
-          <p>დაბადების თარიღი</p>
-        </div>
+      <div className={styles.studentsCard}>
+        <table>
+          <thead>
+            <tr className={styles.titles}>
+              <th>სტუდეტის სახელი და გვარი</th>
+              <th>სტატუსი</th>
+              <th>სქესი</th>
+              <th>ქულები</th>
+              <th>პირადი ნომერი</th>
+              <th>მეილი</th>
+              <th>ტელეფონი</th>
+              <th>მისამართი</th>
+              <th>დაბადების თარიღი</th>
+            </tr>
+          </thead>
+          <tbody>
+            {DUMMY_DATA.map((item) => (
+              <tr key={item.id}>
+                <td>{`${item.firstName} ${item.lastName}`}</td>
+                <td>{item.Status}</td>
+                <td>{item.Gender}</td>
+                <td>{item.Grades}</td>
+                <td>{item.personalNumber}</td>
+                <td>{item.Email}</td>
+                <td>{item.mobileNumber}</td>
+                <td>{item.Address}</td>
+                <td>{item.birthDay}</td>
+              </tr>
+            ))}
+          </tbody>
+        </table>
       </div>
     </>
   );
