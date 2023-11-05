@@ -9,3 +9,11 @@
   height: 24px;
   color: #ffffff;
 }
+
+.pages span {
+  padding: 0 4.5px;
+}
+
+.pages span.active {
+  font-weight: 900;
+}

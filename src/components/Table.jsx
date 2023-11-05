@@ -1,6 +1,6 @@
 import React from "react";
-import styles from "./Table.module.css";
-import sorticon from "../../assets/sorticon.png";
+import styles from "../css/components/Table.module.css";
+import sorticon from "../assets/sorticon.png";
 
 const Table = ({ data }) => {
   return (

@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import styles from "./Navigation.module.css";
+import styles from "../../css/components/header/Navigation.module.css";
 import { Link } from "react-router-dom";
 import Popup from "./Popup";
 

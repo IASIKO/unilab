@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import ApiContent from "../components/api/ApiContent";
+import styles from "../css/pages/Api.module.css";
 
 const Api = () => {
   const [apiData, setApiData] = useState([]);
@@ -15,9 +15,20 @@ const Api = () => {
   }, []);
 
   return (
-    <>
-      <ApiContent apiData={apiData} />
-    </>
+    <ul className={styles.list}>
+      {apiData.map((item) => (
+        <li key={item.id}>
+          <div className={styles.userId}>
+            <span>{item.userId}</span>
+          </div>
+          <div className={styles.id}>
+            <span>{item.id}</span>
+          </div>
+          <p>{item.title}</p>
+          <p>{item.body}</p>
+        </li>
+      ))}
+    </ul>
   );
 };
 

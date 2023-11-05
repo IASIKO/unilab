@@ -1,12 +1,10 @@
 import React, { useState } from "react";
-import styles from "./FilterMenu.module.css";
-import ddarrow from "../../assets/ddarrow.png";
-
+import styles from "../css/components/FilterMenu.module.css";
+import ddarrow from "../assets/ddarrow.png";
 
 const FilterMenu = () => {
   const [isGenderOpen, setIsGenderOpen] = useState(false);
   const [isStatusOpen, setIsStatusOpen] = useState(false);
-
 
   return (
     <div className={styles.filterMenu}>
