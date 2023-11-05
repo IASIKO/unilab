@@ -4,6 +4,7 @@ import filter from "../../assets/filter.png";
 import { DUMMY_DATA } from "../../DummyData";
 import Table from "./Table";
 import FilterMenu from "./FilterMenu";
+import Pagination from "./Pagination";
 
 const FormContent = () => {
   const [isFilterOpen, setIsFilterOpen] = useState(false);
@@ -24,6 +25,7 @@ const FormContent = () => {
       </div>
       {isFilterOpen && <FilterMenu />}
       <Table data={DUMMY_DATA} />
+      <Pagination />
     </>
   );
 };

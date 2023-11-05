@@ -1,0 +1,11 @@
+.pagination {
+  margin-top: 69px;
+  display: flex;
+  justify-content: center;
+}
+
+.pagination div img {
+  width: 24px;
+  height: 24px;
+  color: #ffffff;
+}
