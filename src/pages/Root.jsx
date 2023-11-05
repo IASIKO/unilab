@@ -1,5 +1,5 @@
 import React from "react";
-import Navigation from "../components/form/Navigation";
+import Navigation from "../components/header/Navigation";
 import { Outlet } from "react-router-dom";
 import Landing from "./Landing";
 
