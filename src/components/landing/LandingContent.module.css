@@ -1,7 +1,7 @@
 .landingContainer {
   margin: 0;
   padding: 0;
-  background-image: url("../assets/stars.png");
+  background-image: url("../../assets/stars.png");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;

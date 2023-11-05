@@ -1,12 +1,11 @@
 import React, { useRef, useState } from "react";
-import styles from "../components/RegistrationContent.module.css";
-import addphoto from "../assets/addphoto.png";
+import styles from "./RegistrationContent.module.css";
+import addphoto from "../../assets/addphoto.png";
 import { useNavigate } from "react-router-dom";
 
 const RegistrationContent = () => {
   const [image, setImage] = useState();
   const [inputName, setInputName] = useState("");
-  const [profileData, setProfileData] = useState([{ image: null, name: "" }]);
   const fileInputRef = useRef();
     const navigate = useNavigate();
 

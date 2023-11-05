@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import ApiContent from "../components/ApiContent";
+import ApiContent from "../components/api/ApiContent";
 
 const Api = () => {
   const [apiData, setApiData] = useState([]);

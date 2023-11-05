@@ -6,7 +6,6 @@ import Form from "./pages/Form";
 import Api from "./pages/Api";
 
 function App() {
-
   const router = createBrowserRouter([
     {
       path: "/",

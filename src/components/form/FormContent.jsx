@@ -1,9 +1,9 @@
 import React, { useState } from "react";
 import styles from "./FormContent.module.css";
-import filter from "../assets/filter.png";
-import ddarrow from "../assets/ddarrow.png";
-import sorticon from "../assets/sorticon.png";
-import { DUMMY_DATA } from "../DummyData";
+import filter from "../../assets/filter.png";
+import ddarrow from "../../assets/ddarrow.png";
+import sorticon from "../../assets/sorticon.png";
+import { DUMMY_DATA } from "../../DummyData";
 
 const FormContent = () => {
   const [isFilterOpen, setIsFilterOpen] = useState(false);

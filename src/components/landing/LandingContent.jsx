@@ -1,6 +1,6 @@
 import React from "react";
 import styles from "./LandingContent.module.css";
-import pngegg from "../assets/pngegg.png";
+import pngegg from "../../assets/pngegg.png";
 import { useNavigate } from "react-router-dom";
 
 const LandingContent = () => {
