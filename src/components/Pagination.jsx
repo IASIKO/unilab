@@ -12,13 +12,27 @@ const Pagination = ({ currentPage, total, limit, onPageChange }) => {
   };
   const pages = range(1, pagesCount);
 
+  const handlePageChange = (newPage) => {
+    if (newPage >= 1 && newPage <= pagesCount) {
+      onPageChange(newPage);
+    }
+  };
+
   return (
     <div className={styles.pagination}>
       <div>
-        <img src={chevronsLeft} alt="chevrons left" />
+        <img
+          src={chevronsLeft}
+          alt="chevrons left"
+          onClick={() => handlePageChange(1)}
+        />
       </div>
       <div>
-        <img src={chevronLeft} alt="chevron left" />
+        <img
+          src={chevronLeft}
+          alt="chevron left"
+          onClick={() => handlePageChange(currentPage - 1)}
+        />
       </div>
       <div className={styles.pages}>
         {pages.map((p) => (
@@ -32,10 +46,18 @@ const Pagination = ({ currentPage, total, limit, onPageChange }) => {
         ))}
       </div>
       <div>
-        <img src={chevronRight} alt="chevron right" />
+        <img
+          src={chevronRight}
+          alt="chevron right"
+          onClick={() => handlePageChange(currentPage + 1)}
+        />
       </div>
       <div>
-        <img src={chevronsRight} alt=" chevrons right" />
+        <img
+          src={chevronsRight}
+          alt=" chevrons right"
+          onClick={() => handlePageChange(pages.length)}
+        />
       </div>
     </div>
   );

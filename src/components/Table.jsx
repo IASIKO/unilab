@@ -2,7 +2,14 @@ import React from "react";
 import styles from "../css/components/Table.module.css";
 import sorticon from "../assets/sorticon.png";
 
-const Table = ({ data }) => {
+const Table = ({ data, limit }) => {
+
+  const emptyCount = limit - data.length;
+  let emptyRows = [];
+  for (let i = 0; i < emptyCount; i++) {
+    emptyRows.push(i);
+  }
+
   return (
     <div className={styles.studentsCard}>
       <table>
@@ -40,6 +47,19 @@ const Table = ({ data }) => {
               <td>{item.mobileNumber}</td>
               <td>{item.Address}</td>
               <td>{item.birthDay}</td>
+            </tr>
+          ))}
+          {emptyRows.map((n) => (
+            <tr key={n}>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
             </tr>
           ))}
         </tbody>

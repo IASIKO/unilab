@@ -9,6 +9,10 @@ import Pagination from "../components/Pagination";
 const Form = () => {
   const [isFilterOpen, setIsFilterOpen] = useState(false);
   const [currentPage, setCurrentPage] = useState(1);
+  const limit = 7;
+  const startIndex = (currentPage - 1) * limit;
+  const endIndex = startIndex + limit;
+  const displayedData = DUMMY_DATA.slice(startIndex, endIndex);
 
   return (
     <>
@@ -25,11 +29,11 @@ const Form = () => {
         </div>
       </div>
       {isFilterOpen && <FilterMenu />}
-      <Table data={DUMMY_DATA} />
+      <Table data={displayedData} limit={limit}/>
       <Pagination
         currentPage={currentPage}
         total={DUMMY_DATA.length}
-        limit={7}
+        limit={limit}
         onPageChange={(page) => setCurrentPage(page)}
       />
     </>
