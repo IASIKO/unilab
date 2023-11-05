@@ -1,14 +1,12 @@
 import React, { useState } from "react";
 import styles from "./FormContent.module.css";
 import filter from "../../assets/filter.png";
-import ddarrow from "../../assets/ddarrow.png";
 import { DUMMY_DATA } from "../../DummyData";
 import Table from "./Table";
+import FilterMenu from "./FilterMenu";
 
 const FormContent = () => {
   const [isFilterOpen, setIsFilterOpen] = useState(false);
-  const [isGenderOpen, setIsGenderOpen] = useState(false);
-  const [isStatusOpen, setIsStatusOpen] = useState(false);
 
   return (
     <>
@@ -24,45 +22,8 @@ const FormContent = () => {
           <input type="search" />
         </div>
       </div>
-      {isFilterOpen && (
-        <div className={styles.filterMenu}>
-          <div
-            className={styles.drop}
-            onClick={() => setIsStatusOpen(!isStatusOpen)}
-          >
-            <img src={ddarrow} alt="arrow icon" />
-            <p> სტუდენტის სტატუსი</p>
-          </div>
-          {isStatusOpen && (
-            <div className={styles.checkbox}>
-              <input type="checkbox" name="active" />
-              <label htmlFor="active">ACTIVE</label>
-              <br></br>
-              <input type="checkbox" name="inactive" />
-              <label htmlFor="inactive">INACTIVE</label>
-              <br></br>
-            </div>
-          )}
-          <div
-            className={styles.drop}
-            onClick={() => setIsGenderOpen(!isGenderOpen)}
-          >
-            <img src={ddarrow} alt="arrow icon" />
-            <p> სქესი</p>
-          </div>
-          {isGenderOpen && (
-            <div className={styles.checkbox}>
-              <input type="checkbox" name="male" />
-              <label htmlFor="male">MALE</label>
-              <br></br>
-              <input type="checkbox" name="female" />
-              <label htmlFor="female">FEMALE</label>
-              <br></br>
-            </div>
-          )}
-        </div>
-      )}
-      <Table data={DUMMY_DATA}/>
+      {isFilterOpen && <FilterMenu />}
+      <Table data={DUMMY_DATA} />
     </>
   );
 };

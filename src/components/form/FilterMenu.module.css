@@ -1,0 +1,40 @@
+.filterMenu {
+  width: 297px;
+  height: 295.4px;
+  border-radius: 10px;
+  background-color: white;
+  position: absolute;
+  top: 218px;
+  left: 50px;
+}
+
+.drop {
+  display: flex;
+  align-items: center;
+  margin-left: 31px;
+}
+
+.drop img {
+  width: 4px;
+  height: 7.88px;
+  color: #274d78;
+}
+
+.drop p {
+  font-weight: 500;
+  font-size: 14px;
+  color: #565656;
+  margin-left: 5px;
+}
+
+.checkbox input {
+  margin-left: 52px;
+  color: #3669a2;
+}
+
+.checkbox label {
+  font-weight: 400;
+  font-size: 14px;
+  color: #000000;
+  margin-left: 11px;
+}
