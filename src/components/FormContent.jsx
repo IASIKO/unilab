@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import styles from "./FormContent.module.css";
 import filter from "../assets/filter.png";
 import ddarrow from "../assets/ddarrow.png";
+import sorticon from "../assets/sorticon.png";
 import { DUMMY_DATA } from "../DummyData";
 
 const FormContent = () => {
@@ -68,7 +69,16 @@ const FormContent = () => {
               <th>სტუდეტის სახელი და გვარი</th>
               <th>სტატუსი</th>
               <th>სქესი</th>
-              <th>ქულები</th>
+              <th>
+                <div className={styles.gradesContent}>
+                  <span>ქულები</span>
+                  <img
+                    src={sorticon}
+                    alt="sort icon"
+                    className={styles.sorticon}
+                  />
+                </div>
+              </th>
               <th>პირადი ნომერი</th>
               <th>მეილი</th>
               <th>ტელეფონი</th>
