@@ -2,8 +2,8 @@ import React, { useState } from "react";
 import styles from "./FormContent.module.css";
 import filter from "../../assets/filter.png";
 import ddarrow from "../../assets/ddarrow.png";
-import sorticon from "../../assets/sorticon.png";
 import { DUMMY_DATA } from "../../DummyData";
+import Table from "./Table";
 
 const FormContent = () => {
   const [isFilterOpen, setIsFilterOpen] = useState(false);
@@ -62,47 +62,7 @@ const FormContent = () => {
           )}
         </div>
       )}
-      <div className={styles.studentsCard}>
-        <table>
-          <thead>
-            <tr className={styles.titles}>
-              <th>სტუდეტის სახელი და გვარი</th>
-              <th>სტატუსი</th>
-              <th>სქესი</th>
-              <th>
-                <div className={styles.gradesContent}>
-                  <span>ქულები</span>
-                  <img
-                    src={sorticon}
-                    alt="sort icon"
-                    className={styles.sorticon}
-                  />
-                </div>
-              </th>
-              <th>პირადი ნომერი</th>
-              <th>მეილი</th>
-              <th>ტელეფონი</th>
-              <th>მისამართი</th>
-              <th>დაბადების თარიღი</th>
-            </tr>
-          </thead>
-          <tbody>
-            {DUMMY_DATA.map((item) => (
-              <tr key={item.id}>
-                <td>{`${item.firstName} ${item.lastName}`}</td>
-                <td>{item.Status}</td>
-                <td>{item.Gender}</td>
-                <td>{item.Grades}</td>
-                <td>{item.personalNumber}</td>
-                <td>{item.Email}</td>
-                <td>{item.mobileNumber}</td>
-                <td>{item.Address}</td>
-                <td>{item.birthDay}</td>
-              </tr>
-            ))}
-          </tbody>
-        </table>
-      </div>
+      <Table data={DUMMY_DATA}/>
     </>
   );
 };
