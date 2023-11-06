@@ -3,7 +3,6 @@ import styles from "../css/components/Table.module.css";
 import sorticon from "../assets/sorticon.png";
 
 const Table = ({ data, limit }) => {
-
   const emptyCount = limit - data.length;
   let emptyRows = [];
   for (let i = 0; i < emptyCount; i++) {
@@ -21,11 +20,12 @@ const Table = ({ data, limit }) => {
             <th>
               <div className={styles.gradesContent}>
                 <span>ქულები</span>
-                <img
-                  src={sorticon}
-                  alt="sort icon"
-                  className={styles.sorticon}
-                />
+                <div className={styles.sorticon} >
+                  <img
+                    src={sorticon}
+                    alt="sort icon"
+                  />
+                </div>
               </div>
             </th>
             <th>პირადი ნომერი</th>

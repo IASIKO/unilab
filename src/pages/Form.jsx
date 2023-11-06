@@ -14,7 +14,6 @@ const Form = () => {
   const startIndex = (currentPage - 1) * limit;
   const endIndex = startIndex + limit;
   const displayedData = data.slice(startIndex, endIndex);
-  
 
   return (
     <>
