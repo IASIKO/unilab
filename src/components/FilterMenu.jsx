@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import styles from "../css/components/FilterMenu.module.css";
 import ddarrow from "../assets/ddarrow.png";
 
-const FilterMenu = ({ data, setData, dummyData }) => {
+const FilterMenu = ({ data, setData }) => {
   const [isGenderOpen, setIsGenderOpen] = useState(true);
   const [isStatusOpen, setIsStatusOpen] = useState(true);
   const [filterOptions, setFilterOptions] = useState({
@@ -13,7 +13,7 @@ const FilterMenu = ({ data, setData, dummyData }) => {
   });
 
   useEffect(() => {
-    const filteredData = dummyData.filter((item) => {
+    const filteredData = data.filter((item) => {
       const statusMatch =
         (filterOptions.active && item.Status === "ACTIVE") ||
         (filterOptions.inactive && item.Status === "INACTIVE");
