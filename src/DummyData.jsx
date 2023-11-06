@@ -276,7 +276,7 @@ export const DUMMY_DATA = [
     id: 22,
     firstName: "Jane",
     lastName: "Smith",
-    Status: "IACTIVE",
+    Status: "INACTIVE",
     Gender: "Female",
     Grades: 75,
     personalNumber: "9876543210",

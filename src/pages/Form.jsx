@@ -30,7 +30,7 @@ const Form = () => {
           <input type="search" />
         </div>
       </div>
-      {isFilterOpen && <FilterMenu data={data} setData={setData} />}
+      {isFilterOpen && <FilterMenu data={data} setData={setData} dummyData={DUMMY_DATA} />}
       <Table data={displayedData} limit={limit} />
       <Pagination
         currentPage={currentPage}
