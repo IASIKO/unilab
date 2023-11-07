@@ -5,6 +5,7 @@ import { DUMMY_DATA } from "../DummyData";
 import Table from "../components/Table";
 import FilterMenu from "../components/FilterMenu";
 import Pagination from "../components/Pagination";
+import { useNavigate } from "react-router-dom";
 
 const Form = () => {
   const [isFilterOpen, setIsFilterOpen] = useState(false);
@@ -14,6 +15,8 @@ const Form = () => {
   const startIndex = (currentPage - 1) * limit;
   const endIndex = startIndex + limit;
   const displayedData = data.slice(startIndex, endIndex);
+
+  
 
   return (
     <>
