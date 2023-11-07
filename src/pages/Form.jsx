@@ -31,12 +31,14 @@ const Form = () => {
       </div>
       {isFilterOpen && <FilterMenu data={DUMMY_DATA} setData={setData} />}
       <Table data={displayedData} limit={limit} />
-      <Pagination
-        currentPage={currentPage}
-        total={data.length}
-        limit={limit}
-        onPageChange={(page) => setCurrentPage(page)}
-      />
+      {data.length > 0 && (
+        <Pagination
+          currentPage={currentPage}
+          total={data.length}
+          limit={limit}
+          onPageChange={(page) => setCurrentPage(page)}
+        />
+      )}
     </>
   );
 };

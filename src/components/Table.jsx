@@ -10,7 +10,7 @@ const Table = ({ data, limit }) => {
   }
 
   return (
-    <div className={styles.studentsCard}>
+    <div className={styles.tableContainer}>
       <table>
         <thead>
           <tr className={styles.titles}>
