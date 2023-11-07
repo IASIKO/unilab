@@ -1,6 +1,6 @@
 import {
   RouterProvider,
-  createHashRouter,
+  createBrowserRouter,
 } from "react-router-dom";
 import Landing from "./pages/Landing";
 import Registration from "./pages/Registration";
@@ -9,7 +9,7 @@ import Form from "./pages/Form";
 import Api from "./pages/Api";
 
 function App() {
-  const router = createHashRouter([
+  const router = createBrowserRouter([
     {
       path: "/",
       element: <Landing />,
