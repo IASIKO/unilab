@@ -18,7 +18,7 @@
 }
 
 .landingContainer h1 {
-  color: #4980C0;
+  color: #4980c0;
   font-weight: 400px;
   font-size: 96px;
 }
@@ -28,9 +28,57 @@
   height: 79px;
   border-radius: 7px;
   border: none;
-  background-color: #4980C0;
+  background-color: #4980c0;
   color: #ffffff;
   font-size: 24px;
   font-weight: 400px;
   cursor: pointer;
+}
+
+@media only screen and (max-width: 480px) {
+  .landingContainer img {
+    width: 84px;
+    height: 86px;
+    margin: 50px;
+  }
+
+  .landingContainer h1 {
+    font-size: 36px;
+    margin: 50px;
+    text-align: center;
+  }
+
+  .landingContainer button {
+    width: 195px;
+    height: 79px;
+    font-size: 24px;
+    margin: 50px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .landingContainer h1 {
+    text-align: center;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  .landingContainer img {
+    width: 184px;
+    height: 186px;
+    margin: 50px;
+  }
+
+  .landingContainer h1 {
+    font-size: 66px;
+    margin: 50px;
+    text-align: center;
+  }
+
+  .landingContainer button {
+    width: 495px;
+    height: 119px;
+    font-size: 54px;
+    margin: 50px;
+  }
 }
