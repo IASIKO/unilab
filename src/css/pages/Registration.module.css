@@ -77,22 +77,68 @@
   cursor: pointer;
 }
 
-@media only screen and (min-width: 1024px) {
+@media screen and (max-width: 480px) {
+  .regCard {
+    width: 294px;
+    height: 474px;
+  }
+
+  .regCard h3 {
+    font-size: 24px;
+  }
+
+  .regCard p {
+    font-size: 16px;
+  }
+
+  .regCard div {
+    width: 100px;
+    height: 100px;
+  }
+  .addphoto {
+    width: 52.69px;
+    height: 44.8px;
+  }
+
+  .profileImage {
+    width: 100px;
+    height: 100px;
+  }
+
+  .regCard .inputName {
+    width: 232px;
+    height: 31px;
+    font-size: 16px;
+    padding-left: 19px;
+  }
+
+  .regCard input::placeholder {
+    font-size: 16px;
+  }
+
+  .regCard button {
+    width: 165px;
+    height: 34.14px;
+    font-size: 16px;
+  }
+}
+
+@media screen and (min-width: 480px) and (max-width: 1024px) {
   .regCard {
     width: 494px;
-    height: 594px;
+    height: 534px;
   }
-  
+
   .regCard h3 {
     margin: 32px 0 0 0;
     font-size: 34px;
   }
-  
+
   .regCard p {
     color: #000000;
     font-size: 26px;
   }
-  
+
   .regCard div {
     width: 100px;
     height: 100px;
@@ -102,23 +148,72 @@
     width: 52.69px;
     height: 44.8px;
   }
-  
+
   .profileImage {
     width: 100px;
     height: 100px;
-  }  
+  }
   .regCard .inputName {
     width: 232px;
     height: 31px;
     font-size: 16px;
     padding-left: 19px;
   }
-  
+
   .regCard input::placeholder {
     font-weight: 400;
     font-size: 16px;
   }
-  
+
+  .regCard button {
+    width: 195px;
+    height: 44.14px;
+    font-size: 14px;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  .regCard {
+    width: 494px;
+    height: 534px;
+  }
+
+  .regCard h3 {
+    margin: 32px 0 0 0;
+    font-size: 34px;
+  }
+
+  .regCard p {
+    color: #000000;
+    font-size: 26px;
+  }
+
+  .regCard div {
+    width: 100px;
+    height: 100px;
+  }
+
+  .addphoto {
+    width: 52.69px;
+    height: 44.8px;
+  }
+
+  .profileImage {
+    width: 100px;
+    height: 100px;
+  }
+  .regCard .inputName {
+    width: 232px;
+    height: 31px;
+    font-size: 16px;
+    padding-left: 19px;
+  }
+
+  .regCard input::placeholder {
+    font-weight: 400;
+    font-size: 16px;
+  }
+
   .regCard button {
     width: 195px;
     height: 44.14px;

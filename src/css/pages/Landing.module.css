@@ -35,7 +35,7 @@
   cursor: pointer;
 }
 
-@media only screen and (max-width: 480px) {
+@media screen and (max-width: 480px) {
   .landingContainer img {
     width: 84px;
     height: 86px;
@@ -56,29 +56,65 @@
   }
 }
 
-@media only screen and (max-width: 768px) {
-  .landingContainer h1 {
-    text-align: center;
-  }
-}
-
-@media only screen and (min-width: 1024px) {
+@media screen and (min-width: 480px) and (max-width: 768px) {
   .landingContainer img {
-    width: 184px;
-    height: 186px;
+    width: 84px;
+    height: 86px;
     margin: 50px;
   }
 
   .landingContainer h1 {
-    font-size: 66px;
+    font-size: 36px;
     margin: 50px;
     text-align: center;
   }
 
   .landingContainer button {
-    width: 495px;
-    height: 119px;
-    font-size: 54px;
+    width: 195px;
+    height: 79px;
+    font-size: 24px;
+    margin: 50px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .landingContainer img {
+    width: 84px;
+    height: 86px;
+    margin: 50px;
+  }
+
+  .landingContainer h1 {
+    font-size: 36px;
+    margin: 50px;
+    text-align: center;
+  }
+
+  .landingContainer button {
+    width: 195px;
+    height: 79px;
+    font-size: 24px;
+    margin: 50px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .landingContainer img {
+    width: 154px;
+    height: 156px;
+    margin: 50px;
+  }
+
+  .landingContainer h1 {
+    font-size: 56px;
+    margin: 50px;
+    text-align: center;
+  }
+
+  .landingContainer button {
+    width: 295px;
+    height: 79px;
+    font-size: 24px;
     margin: 50px;
   }
 }
