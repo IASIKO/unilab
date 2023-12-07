@@ -3,11 +3,14 @@
   height: 894px;
   border-radius: 25px;
   background-color: #ffffff;
-  margin: 93px auto;
   padding: 0;
   display: flex;
   flex-direction: column;
   align-items: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 .regCard h3 {
